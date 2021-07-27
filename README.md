@@ -8,6 +8,9 @@ The project implements the coding assignment. It works like this:
 - group-count issues by component
 - pretty print the mapping in a table
 
+## Dependencies
+Developed and tested with NodeJS `v16.5.0`
+
 ## Install
 Copy `config.example.json` onto `config.json`
 
