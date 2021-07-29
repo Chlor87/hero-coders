@@ -9,11 +9,12 @@
     "nconf": "^0.11.3"
   },
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.14.5",
     "eslint": "^7.31.0",
     "jest": "^27.0.6"
   },
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
-    "start": "node --es-module-specifier-resolution node ."
+    "start": "node --es-module-specifier-resolution node .",
+    "test": "jest"
   }
 }

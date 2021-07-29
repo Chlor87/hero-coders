@@ -4,9 +4,9 @@
 The project implements the coding assignment. It works like this:
 - fetch components
 - find components without `lead` field
-- find issues belonging to the filtered components
-- group-count issues by component
-- pretty print the mapping in a table
+- for every component get the issue count
+- merge results
+- print the mapping in a table
 
 ## Dependencies
 Developed and tested with NodeJS `v16.5.0`
@@ -27,16 +27,14 @@ If you want to run it with pure `node` command, please call it with `--es-module
 ## Output
 ```
 kuba@kuba-pc:~/hero-coders$ yarn start
-fetching components...
-done, fetched 3 leadless components
-fetching issues...
-23/23
-done, fetched 23 issues
-┌─────────┬──────────────────┬────────┐
-│ (index) │    component     │ issues │
-├─────────┼──────────────────┼────────┤
-│    0    │ 'Infrastructure' │   9    │
-│    1    │  'Marketplace'   │   6    │
-│    2    │ 'Data analysis'  │   8    │
-└─────────┴──────────────────┴────────┘
+yarn run v1.22.5
+$ node --es-module-specifier-resolution node .
+┌────────────────┬────────┐
+│    (index)     │ Values │
+├────────────────┼────────┤
+│ Data analysis  │   8    │
+│ Infrastructure │   9    │
+│  Marketplace   │   6    │
+└────────────────┴────────┘
+Done in 1.01s.
 ```
