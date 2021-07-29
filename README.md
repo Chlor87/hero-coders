@@ -6,7 +6,7 @@ The project implements the coding assignment. It works like this:
 - find components without `lead` field
 - for every component get the issue count
 - merge results
-- print the mapping in a table
+- print results
 
 ## Dependencies
 Developed and tested with NodeJS `v16.5.0`
